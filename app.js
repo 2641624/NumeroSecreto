@@ -22,7 +22,7 @@ function exibirTextoNaTela(tag, texto){
         console.log("Web Speech API OK neste navegador.");
         let utterance = new SpeechSynthesisUtterance(texto);
         utterance.lang = 'pt-BR'; 
-        utterance.rate = 1.2; 
+        utterance.rate = 1; 
         window.speechSynthesis.speak(utterance); 
     } else {
         console.log("Web Speech API não suportada neste navegador.");
